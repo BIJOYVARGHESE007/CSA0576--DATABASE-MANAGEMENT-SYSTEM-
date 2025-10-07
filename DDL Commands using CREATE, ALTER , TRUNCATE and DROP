@@ -1,0 +1,22 @@
+CREATE DATABASE CollegeDB;
+USE CollegeDB;
+CREATE TABLE Students (
+    StudentID INT PRIMARY KEY,
+    StudentName VARCHAR(50),
+    Age INT,
+    Department VARCHAR(30)
+);
+
+ALTER TABLE Students ADD Email VARCHAR(50);
+
+ALTER TABLE Students MODIFY Age SMALLINT;
+
+ALTER TABLE Students RENAME COLUMN StudentName TO FullName;
+
+ALTER TABLE Students DROP COLUMN Department;
+
+TRUNCATE TABLE Students;
+
+DROP TABLE Students;
+DROP DATABASE CollegeDB;
+
