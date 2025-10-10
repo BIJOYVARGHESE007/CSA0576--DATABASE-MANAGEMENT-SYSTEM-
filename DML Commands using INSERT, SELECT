@@ -1,0 +1,10 @@
+CREATE TABLE students (
+    id INT,
+    name VARCHAR(50),
+    age INT
+);
+INSERT INTO students (id, name, age)
+VALUES (1, 'Sherly', 20);
+
+
+SELECT * FROM table_name;
